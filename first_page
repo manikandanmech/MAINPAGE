@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manikandan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+            *{
+            justify-content: center;
+          }
+          body {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                       background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+          
+                  }
+                   .container {
+                      text-align: center;
+                      justify-content: center;
+                      background-color:0px 0px 10px #efefef;
+                      padding: 20px;
+                      border-radius: 10px;
+                       box-shadow: 0px 0px 10px #efefef;
+                       position: relative;
+                       width: 550px;
+                       height: 100%;
+                  }
+                  .search {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
+                      background: transparent;
+                      border-radius: 2;
+                         
+                      
+                  }
+                  #search1{
+                         border-radius: 10px;
+                         width: 500px;
+                         height: 40px;
+                         padding: 10px;
+                            border: none;
+                      outline: none;
+                  
+                 
+                  }
+                  
+                  #card {
+                      width: 500px;
+                      padding: 10px;
+                     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+                      border-radius: 10px;
+                      margin-top: 20px;
+                  }
+                  #task{
+                       border: none;
+                      outline: none;
+                      padding: 2px;
+                      border-radius: 10px;
+                      padding-left: 2px;
+                      width: 100%;
+                      height: 37px;
+                 
+                  }
+                  input {
+                      border: none;
+                      outline: none;
+                      padding: 10px;
+                      border-radius: 10px;
+                      width:100%;
+                      height: 100%;
+                 
+                  }
+                  .text {
+                      display: flex;
+                      width: 500px;
+                      height: 40px;
+                  }
+                  .time {
+                      display: flex;
+                      padding: 20px;
+                      cursor: pointer;
+                    
+                     
+                  }
+                  img{
+                      mix-blend-mode:multiply;
+                  }
+                .calendar {
+                width: 300px;
+                margin: auto;
+                border: 1px solid #ccc;
+                 padding: 10px;
+                   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+          }
+          .days {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            font-weight: bold;
+            text-align: center;
+          }
+          .day {
+            padding: 5px;
+          }
+          .grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+          }
+          .day-cell {
+            padding: 5px;
+            text-align: center;
+            border:none;
+            background-color:rgba(255, 255, 255, 0.1);
+          }
+          .day-cell:hover{
+            border-radius:50em;
+            background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+  cursor: pointer;
+          }
+          .close{
+              display:flex;
+              cursor: pointer;
+              font-size: 25px;
+          
+          }
+          
+          .container1 {
+            width: 140px;
+            height: 90px;
+            text-align: center;
+            position: relative;
+            justify-content: center;
+            padding: 10px;
+            display: flex;
+            margin: auto;
+            }
+          
+          .another{
+            display: flex;
+            cursor: pointer;
+            font-size: 20px;
+          }
+       
+          #sec{
+            cursor: pointer;
+          }
+
+
+#accordianbutton{
+    width:880px;
+    height: 30px;
+}
+#addTask{
+ background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+  border-radius: 9px;
+  border-style: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  
+}
+img{
+  mix-blend-mode: multiply;
+  mix-blend-mode:;
+}
+.accordianbutton{
+  width: 522px;
+  text-align: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: white;
+  border: none;
+  /* right: -700px; */
+  display: flex;
+  border-radius: 10px;
+}
+
+.deleteBtn,
+.editBtn{
+   background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+  border-style: none;
+   padding: 5px;
+ border-radius: 9px;
+ width: 45px;
+ height: 40px;
+}
+.taskvalue{
+  width: 522px;
+  height: 100%;
+ background-color:rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  text-align: center; 
+  border-radius: 10px;
+}
+</style>
+</head>
+
+
+<body>
+
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">MR.COOPER</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="#">HOME</a>
+        <a class="nav-link" href="#">BOOKING</a>
+        <a class="nav-link" href="#">SERVICES</a>
+        <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+      </div>
+    </div>
+  </div>
+</nav>
+   <div class="container">
+     <a href="https://neetocode.com/site/dhinesh-shanmuganathan/HCJ-TDW"  style="text-align:center;padding:50px"><h1>NEW BOOKING</h1></a>
+     <div class="history">
+       <h3>history</h3>
+       &emsp13;
+       <div class="row row-cols-1 row-cols-md-3 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      </div>
+      <div class="card-footer">
+        <small class="text-muted">Last updated 3 mins ago</small>
+      </div>
+    </div>
+  </div>
+</div>
+     </div>
+   </div>
+</body>
+</html>
