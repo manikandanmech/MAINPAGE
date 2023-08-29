@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEXT PAGE</title>
+    <style>
+
+
+body{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    padding: 100px;
+    
+}.card{
+    padding: 20px;
+    width: 500px;
+    height: 400px;
+    /* box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;  */
+   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    justify-content: center;
+    text-align: center; 
+    
+            /* background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%); */
+}
+button{
+    padding:5px;
+   width:100px;
+   border-radius:5px;
+   background: linear-gradient(24deg,green,lightgreen);
+}
+button:hover{
+    
+   background: linear-gradient(24deg,lightgreen,green);
+    
+}
+        
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="card">
+        <h1 style="text-align:center">PICK UP THE DATE AND TIME</h1>
+       <div  style="text-align:center" class="date-time">
+           <input  style=" text-align:center" type="date">&emsp13;<span>DATE</span>
+           <input style="text-align:center" type="time">&emsp13;<span>TIME</span>
+       </div>
+       <div  style="text-align:center" class="location">
+           <h3>PICK UP THE LOCATION</h3>
+           <select>
+               <option>TRICHY</option>
+               <option>MADURAI</option>
+               <option>KARAIKUDI</option>
+               <option>ARANTHAGI</option>
+               <option>MAYULADUTHURAI</option>
+               <option>COIAMBATORE</option>
+               <option>ERODE</option>
+               <option>THIRUPUR</option>
+               <option>SALEM</option>
+               <option>CHENNAI</option>
+               <option>THIRUVATHUR</option>
+               
+           </select>
+           <br>
+           <br>
+           <br>
+           <br>
+           <button>request</button>&emsp13;&emsp13;
+           <button>pick up</button>
+       </div>
+        </div>
+    </div>
+</body>
+</html>
